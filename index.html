@@ -90,7 +90,7 @@
         When creating your own presentation get rid of this file. Start from scratch, it's fun!
         
     -->
-    <link href="impress.js/css/impress-demo.css" rel="stylesheet" />
+    <link href="impress.css" rel="stylesheet" />
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -201,9 +201,63 @@
         down (4 times) to make it back to it's correct size.
         
     -->
-    <div id="title" class="step slide" data-x="0" data-y="0" data-scale="4">
+    <div id="title" class="step slide" data-x="0" data-y="0" data-scale="2">
         <h1>Code Review CC</h1>
+
+      <h2>Plan de la code review : </h2>
+      <ul>
+      <li>Quelques reflexions sur Scala</li>
+      <li>"Anti-patterns" en pratique</li>
+      </ul>
+
     </div>
+
+    <div class="step slide" data-x="2000" data-scale="2">
+       <h2>Qu'est ce que Scala ?</h2>
+
+       <p>Scala ( /ˈskɑːlə/ skah-lə) is a <b>multi-paradigm programming</b> language designed to integrate features of
+        <u>object-oriented programming</u> and <u>functional programming</u>.</p>
+
+        ...
+
+         <p>James Strachan, the creator of Groovy, described Scala as a possible successor to Java.</p>
+
+    </div>
+
+    <div class="step" data-x="4000" data-scale="2">
+     THIS IS SCALA
+     <img src="http://1.bp.blogspot.com/-EI8Pxpx3zLs/TVxdUtoRr0I/AAAAAAAAAA0/KiZnXsQz9ZI/s320/56097637bebe-20tigre-jpg%255B1%255D.jpg" width="100%" />
+    </div>
+
+    <div class="step">
+      Dans les détails : 
+
+
+      Ce qui fait de Scala un langage multi-paradigm, c'est ça définition de la fonction en tant qu'objet 
+
+
+    </div>
+
+    <div class="step">
+      //Définition de la fonction en Scala
+
+      trait Function1 [-T1, +R] extends AnyRef
+
+    
+      Ce qui veut dire : 
+       - Le type Function1 (fonction avec un seul argument) est un type paramétré avec deux paramétres : 
+
+        -  T1, le type de l'argument de la function.
+        -  R, le type du retour de la fonction
+
+       - Le type Function1 étent AnyRef (équivalent en Scala à java.lang.Object)
+       - Le type Function1 est : 
+        - Contravariant par rapport au type T1
+        - Covariant par rapport au type R.
+    </div>
+
+
+
 
     <!--
         
