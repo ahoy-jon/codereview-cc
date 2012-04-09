@@ -256,9 +256,32 @@
         - Covariant par rapport au type R.
     </div>
 
+    <div class="step">
+      <h2>Covariance et contravariance</h2>
+      
+      Dans le système de type, la covariance et la contravariance traite de
+      l'ordre des types et des équivalences dans certaines situations 
+    </div>
+    
+    <div class="step">
+      <h2>Avec un exemple, c'est mieux </h2>
+
+      La liste (List[+A]) et covariante sur son type paramétré A : 
+
+      Soit : 
+
+      trait Personne
+      trait Etudiant extends Personne
 
 
+      Donc : 
 
+      List[Etudiant] <: List[Personne]
+    </div>
+    <div class="step">
+    <h2>La contravariance
+
+    </div>
     <!--
         
         This element introduces rotation.
